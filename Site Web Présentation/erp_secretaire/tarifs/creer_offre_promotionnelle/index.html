@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Créer une offre promotionnelle</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Tarifs et offres </h1>
+                    <a href="../creer_offre_commerciale/index.html">Créer offre commerciale</a>
+                    <a href="../creer_offre_promotionnelle/index.html">Créer offre promotionnelle</a>
+                    <a href="../creer_tarif/index.html">Créer un tarif</a>
+                    <a href="../creer_reduction/index.html">Créer une réduction</a>
+                    <a href="../creer_critere_promotion/index.html">Créer un critère de promotion</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Créer une offre promotionnelle </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Nom de l'offre : </td>
+                                    <td><input type="text" /></td>      
+                                </tr>  
+                            </table>
+                                <table id="table2"; cellspacing="5px" cellpadding="5%"; align="center">
+                                <tr>  
+                                    <td>Durée de l'offre : </td>
+                                    <td>Du  </td>
+                                    <td><select>  
+                                        <option>20/06/2019</option>  
+                                        <option>21/06/2019</option>
+                                        <option>22/06/2019</option>
+                                        <option>23/06/2019</option>
+                                        <option>24/06/2019</option>    
+                                    </select> </td>
+                                    <td>  Au  </td>
+                                    <td><select>  
+                                        <option>20/06/2019</option>  
+                                        <option>21/06/2019</option>
+                                        <option>22/06/2019</option>
+                                        <option>23/06/2019</option>
+                                        <option>24/06/2019</option>    
+                                    </select> </td>    
+                                </tr>
+                                </table>  
+                            <section id="partie222">
+                                <p>Réduction:</p>
+                                <table id="table3"; cellspacing="5px" cellpadding="5%"; align="center">
+                                <tr>  
+                                    <td></td>  
+                                    <td>Réduction</td>    
+                                </tr>  
+                                <tr>  
+                                    <td><input type="checkbox"/></td>  
+                                    <td>Remise de 15%</td>
+                                </tr>
+                                <tr>  
+                                    <td><input type="checkbox"/></td>  
+                                    <td>Ajouter une réduction...</td>
+                                </tr>
+                            </table>
+                            </section>
+                            <button id="valider">Valider</button>   
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

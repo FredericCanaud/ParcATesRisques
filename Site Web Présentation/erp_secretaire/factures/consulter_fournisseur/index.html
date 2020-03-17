@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Consulter un fournisseur</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Factures </h1>
+                    <a href="../creer_fournisseur/index.html">Créer un fournisseur</a>
+                    <a href="../commander_fournisseur/index.html">Commander aux fournisseurs</a>
+                    <a href="../consulter_fournisseur/index.html">Consulter un fournisseur</a>
+                    <a href="../consulter_commande/index.html">Consulter les commandes</a>
+                    <a href="../consulter_facture/index.html">Consulter les factures</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Consulter un fournisseur </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <th><input type="text"></th>
+                                <th><button>Rechercher</button></th>
+                                <th><button>Ajouter</button></th>
+                                <th><button>Supprimer</button></th>
+                                <th></th>  
+                            </table>
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Nom du fournisseur</td>  
+                                    <td>Société</td>
+                                    <td>Poste occupé</td>
+                                    <td>Date de création</td>
+                                    <td>Nombre de commandes</td>
+                                    <td></td>     
+                                </tr>  
+                                <tr>  
+                                    <td>Odile DERAY</td>  
+                                    <td>Brico Dépot</td>
+                                    <td>Conseillière commerciale</td>
+                                    <td>04/06/2019</td>
+                                    <td>3</td>
+                                    <td><input type="checkbox"></td>     
+                                </tr>
+                                <tr>  
+                                    <td>Serge KARAMASOV</td>  
+                                    <td>Fleuralis't</td>
+                                    <td>Directeur commercial</td>
+                                    <td>05/06/2019</td>
+                                    <td>1</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>  
+                                    <td>Elon MUSK</td>  
+                                    <td>Momomotus</td>
+                                    <td>Siesteur</td>
+                                    <td>15/06/2019</td>
+                                    <td>0</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>     
+                            </table>
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

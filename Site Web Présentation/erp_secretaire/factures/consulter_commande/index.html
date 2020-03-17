@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Consulter les commandes</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Factures </h1>
+                    <a href="../creer_fournisseur/index.html">Créer un fournisseur</a>
+                    <a href="../commander_fournisseur/index.html">Commander aux fournisseurs</a>
+                    <a href="../consulter_fournisseur/index.html">Consulter un fournisseur</a>
+                    <a href="../consulter_commande/index.html">Consulter les commandes</a>
+                    <a href="../consulter_facture/index.html">Consulter les factures</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Consulter les commandes </h1>
+                    </section>
+                    <section id="partie22">
+                        <table>
+                            <tr>
+                                <th><input type="text"></th>
+                                <th><button>Rechercher</button></th>
+                                <th><button>Ajouter</button></th>
+                                <th><button>Supprimer</button></th>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>Date de commande</th>
+                                <th>Référence</th>
+                                <th>Fournisseur</th>
+                                <th>Article</th>
+                                <th>Quantité</th>
+                            </tr>
+                            <tr>
+                                <td>03/06/2019</td>
+                                <td>FPD21</td>
+                                <td>Brico Dépot</td>
+                                <td>Pelle</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>05/06/2019</td>
+                                <td>KVD56</td>
+                                <td>Fleur'ist</td>
+                                <td>Graines tulipes</td>
+                                <td>8</td>
+                            </tr>
+                        </table>    
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

@@ -1,0 +1,86 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Consulter les stocks</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Marchandises </h1>
+                    <a href="../receptionner_marchandises/index.html">Réceptionner les marchandises</a>
+                    <a href="../creer_article/index.html">Créer un article</a>
+                    <a href="../consulter_stock/index.html">Consulter les stocks</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Consulter les stocks </h1>
+                    </section>
+                    <section id="partie22">
+                        <h2>Voici l'état des stocks actuels :</h2>
+                        <button id="telecharger">Télécharger l'état des stocks</button>
+                        <table>
+                            <tr>
+                                <th>Type</th>
+                                <th>Article</th>
+                                <th>Quantité</th>
+                                <th>ALERTE</th>
+                                <th>Commander</th>
+                             </tr>
+                            <tr class="alerte">
+                                <td>Entretien</td>
+                                <td>Huile pour manège</td>
+                                <td>9 L</td>
+                                <td><input type="radio" disabled checked/></td>
+                                <td><button>Commander</button></td>
+                            </tr>
+                            <tr class="alerte">
+                                <td>Entretien</td>
+                                <td>Savon de Marseille</td>
+                                <td>VIDE</td>
+                                <td><input type="radio" disabled checked/></td>
+                                <td><button>Commander</button></td>
+                            </tr>
+                                <tr>
+                                <td>Nourriture</td>
+                                <td>Nourriture pour singes</td>
+                                <td>20 kg</td>
+                                <td><input type="radio" disabled/></td>
+                                <td><button>Commander</button></td>
+                            </tr>
+                                <tr>
+                                <td>Nourriture</td>
+                                <td>Nourriture pour giraffe</td>
+                                <td>53 kg</td>
+                                <td><input type="radio" disabled/></td>
+                                <td><button>Commander</button></td>
+                            </tr>
+                            <tr>
+                                <td>Graines</td>
+                                <td>Graines de roses rouge</td>
+                                <td>420 g</td>
+                                <td><input type="radio" disabled/></td>
+                                <td><button>Commander</button></td>
+                            </tr>
+                        </table>
+                    </section>
+                </section>
+            </div>
+        </body>
+    </html>

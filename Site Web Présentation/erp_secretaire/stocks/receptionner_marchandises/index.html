@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Le Parc à tes risques</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+            </ul>
+        </header>
+        <div id=container>
+            <section id="partie1">
+                <img src="img/logo.png" alt="logo">
+                <h1> Marchandises </h1>
+                <a href="../receptionner_marchandises/index.html">Réceptionner les marchandises</a>
+                <a href="../creer_article/index.html">Créer un article</a>
+                <a href="../consulter_stock/index.html">Consulter les stocks</a>
+            </section>
+            <section id="partie2">
+                <section id="partie21">
+                    <h1> Réceptionner les marchandises </h1>
+                </section>
+                <section id="partie22">
+					<button id="prodManuel">Entrer manuellement un produit</button>
+                    <table class="tg" style="undefined;table-layout: fixed; width: 704px">
+                        <colgroup>
+                            <col style="width: 23px">
+                            <col style="width: 103px">
+                            <col style="width: 223px">
+                            <col style="width: 113px">
+                            <col style="width: 81px">
+                            <col style="width: 161px">
+                        </colgroup>
+                        <tr>
+                            <th class="tg-l5w2"></th>
+                            <th class="tg-l5w2">Référence</th>
+                            <th class="tg-l5w2">Désignation article</th>
+                            <th class="tg-l5w2">N° Commande</th>
+                            <th class="tg-l5w2">Quantité</th>
+                            <th class="tg-l5w2">Unités de mesure</th>
+                        </tr>
+                        <tr>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2">01234567<br></td>
+                            <td class="tg-l5w2">VITALI Granulé 25 KG</td>
+                            <td class="tg-l5w2">44566327</td>
+                            <td class="tg-l5w2">5.0</td>
+                            <td class="tg-l5w2">Kilogramme(s)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2">22222334</td>
+                            <td class="tg-l5w2">GREDIN Lait fermenté 11L</td>
+                            <td class="tg-l5w2">445684215<br><br></td>
+                            <td class="tg-l5w2">10.0</td>
+                            <td class="tg-l5w2">Litre(s)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2">Scanner le prochain produit...</td>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2"></td>
+                            <td class="tg-l5w2"></td>
+                        </tr>
+                    </table>
+					<button id="valider">Valider</button>
+                </section>
+            </section>
+        </div>
+    </body>
+</html>

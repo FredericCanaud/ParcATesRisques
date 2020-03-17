@@ -1,0 +1,328 @@
+/***************************************** GLOBAL ***************************************/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    font-family: Comic Sans MS,sans-serif;
+    background-color: bisque;
+}
+
+a {
+    color: #000;
+}
+
+p,h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 180%;
+}
+
+p {
+    font-size: 20px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-top: 4%;
+}
+
+/***************************************** HEADER *****************************************/
+
+header {
+    z-index: 3;
+    width: 100%;
+    background-color: #000;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    border-right: solid 5px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+    background-color: #000;
+}
+
+header li a {
+    display: flex;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header li a:hover,
+header .menu-btn:hover  {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+/***************************************** MENU *****************************************/
+
+header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/************************************ ICONE DU MENU ************************************/
+
+
+header .menu-icon {
+    display: inline-block;
+    float: right;
+    position: relative;
+    padding: 28px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+header .menu-icon .navicon {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: #333;
+    transition: background .2s ease-out;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    transition: all .2s ease-out;
+}
+
+header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/********************************* BOUTON DU MENU **************************************/
+
+header .menu-btn {
+    display: none;
+}
+
+header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/************************************ PARTIE PRINCIPALE ***********************************/
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aaa;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#333;background-color:#fff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#aaa;color:#fff;background-color:#f38630;}
+.tg .tg-l5w2{font-size:14px;font-family:"Comic Sans MS", cursive, sans-serif !important;;border-color:#000000;text-align:center;vertical-align:top}
+
+#partie1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+    width: 300px;
+    border: solid 3px;
+    border-bottom: none;
+    align-content: stretch;
+}
+
+#partie1 img{
+    width: 100%;
+    height: 40%;
+    padding-bottom: 20%;
+}
+#partie1 h1{
+    font-weight: bold;
+    padding-bottom: 10%;
+}
+#partie1 a {
+    margin-top: 5%;
+    padding-bottom: 3%;
+	padding-top: 3%;
+    border: solid;
+	
+    margin-right: 5%;
+    margin-left: 5%;
+    vertical-align: center;
+	text-align: center;
+	text-decoration: none;
+}
+#container{
+    border: solid 3px;
+}
+/************************************ RÉCEPTIONNER MARCHANDISE ***********************************/
+
+#partie21{
+    display: flex;
+    height: 15%;
+    border: solid 3px;
+    border-left: none;
+    width: 100%;
+}
+#partie21 h1{
+    margin: auto;   
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+#partie2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 4;
+}
+#partie22{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+	padding: 20px;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+#prodManuel{
+    margin-top: 5%;
+    margin-left: 5%;
+	width: 30%;
+	background-color: red;
+	color: white;
+	font-family: Comic Sans MS,sans-serif;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+#prodManuel:active{
+	background-color:  salmon;
+}
+#valider{
+    width: 10%;
+    margin-top: 5%;
+    margin-left: 80%;
+	background-color: lime;
+	color: white;
+	font-family: Comic Sans MS,sans-serif;
+	border: 2px solid black;
+	border-radius: 10px;
+}
+#valider:active{
+	background-color: limegreen;
+}
+table{
+    margin-top: 3%;
+    margin-left: 10%;
+}
+/************************************ FORMULAIRE ***********************************/
+/*
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Gochi Hand',cursive;
+}
+
+form div {
+    margin: 10px;
+    text-align: center;
+}
+
+form div:nth-child(6) {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+form div:nth-child(7) {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+
+form div:last-child input[type="submit"] {
+    width: 100%;
+    height: 150%;
+    border-radius: 25px;
+    font-family: 'Gochi Hand',cursive;
+    font-size: 18px;
+    background: linear-gradient(90deg,#FFFF99, #FFFF66, #FFFF00, #FFFF66, #FF9);
+}
+
+select {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: #f1f1f1;
+}
+
+.basicInput {
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+    font-family: 'Gochi Hand',cursive;
+    background-color: #f1f1f1;
+}
+
+.basicInput:focus {
+    background-color: white;
+}
+*/
+@media(min-width:768px) {
+    header li {
+        float: left;
+    }
+
+    header li a {
+        padding: 20px 30px;
+    }
+
+    header .menu {
+        float: right;
+        clear: none;
+        max-height: none;
+    }
+
+    header .menu-icon {
+        display: none;
+    }
+}

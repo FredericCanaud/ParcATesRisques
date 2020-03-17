@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Consulter un salarié</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Salariés </h1>
+                    <a href="../creer_salarie/index.html">Créer un salarié</a>
+                    <a href="../creer_planning/index.html">Créer un planning</a>
+                    <a href="../consulter_planning/index.html">Consulter un planning</a>
+                    <a href="../consulter_salarie/index.html">Consulter un salarié</a>
+                    <a href="../enregistrer_horaire/index.html">Exporter des horaires</a>
+                    <a href="../etablir_fiche_paie/index.html">Etablir une fiche de paie</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Consulter un salarié </h1>
+                    </section>
+                    <section id="partie22">
+                        <table>
+                            <tr>
+                                <th><input type="text"></th>
+                                <th><button>Rechercher</button></th>
+                                <th><button><a href="../creer_salarie/index.html">Ajouter</button></th>
+                                <th><button>Supprimer</button></th>
+                                <th><button><a href="../etablir_fiche_paie/index.html">Etablir une fiche de paie</button></th>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Poste</th>
+                                <th>Salaire horaire (BRUT)</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Odile</td>
+                                <td>DERAY</td>
+                                <td>Secrétaire</td>
+                                <td>SMIC</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Serge</td>
+                                <td>KARAMASOV</td>
+                                <td>Réparateur</td>
+                                <td>SMIC</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                            <tr>
+                                <td>Jacques</td>
+                                <td>BOUTIN</td>
+                                <td>Dresseur</td>
+                                <td>1800€</td>
+                                <td><input type="checkbox"></td>
+                            </tr>
+                        </table>    
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

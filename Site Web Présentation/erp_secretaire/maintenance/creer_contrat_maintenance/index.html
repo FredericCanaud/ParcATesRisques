@@ -1,0 +1,73 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Créer un contrat de maintenance</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Maintenance </h1>
+                    <a href="../creer_materiel/index.html">Créer un matériel</a>
+                    <a href="../creer_contrat_maintenance/index.html">Créer un contrat de maintenance</a>
+                    <a href="../creer_demande_intervention/index.html">Créer une demande d'intervention</a>
+                    <a href="../enregistrer_intervention/index.html">Enregistrer une intervention</a>
+                    <a href="../consulter_programme_maintenance/index.html">Consulter un programme d'intervention</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Créer un contrat de maintenance </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Nom du matériel :</td>  
+                                    <td><input type="text"/></td>
+                                    <td>Numéro du matériel :</td>  
+                                    <td><input type="text"/></td>
+                                </tr>  
+                                <tr>
+                                    <td>Responsable du matériel :</td>  
+                                    <td><select>  
+                                        <option>Odile DERAY</option>  
+                                        <option>Serge KARAMASOV</option>
+                                        <option>Emile DUPRE</option>  
+                                    </select> </td> 
+                                    <td>Contact responsable :</td>  
+                                    <td><input type="text"/></td>
+                                </tr>  
+                                <tr>  
+                                    <td>Etat :</td>  
+                                    <td><select>  
+                                        <option>A contrôler</option>  
+                                        <option>Mineur</option>
+                                        <option>Urgent</option>  
+                                    </select> </td>
+                                    <td>Nombre d'interventions sur le matériel :</td>
+                                    <td><input type="text"/></td>
+                                </tr>   
+                            </table>
+                            <p> Descriptif du contrat : </p>
+                            <input class="descriptif type="text" name="descriptif" />
+                            <button id="valider"> Valider </button>   
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

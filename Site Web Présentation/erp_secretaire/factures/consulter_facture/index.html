@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Consulter les factures</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Factures </h1>
+                    <a href="../creer_fournisseur/index.html">Créer un fournisseur</a>
+                    <a href="../commander_fournisseur/index.html">Commander aux fournisseurs</a>
+                    <a href="../consulter_fournisseur/index.html">Consulter un fournisseur</a>
+                    <a href="../consulter_commande/index.html">Consulter les commandes</a>
+                    <a href="../consulter_facture/index.html">Consulter les factures</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Consulter les factures </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <th><input type="text"></th>
+                                    <th><button>Rechercher</button></th>
+                                    <th><button>Ajouter</button></th>
+                                    <th><button>Supprimer</button></th>     
+                                </tr>  
+                            </table>
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Référence de la facture</td>  
+                                    <td>Fournisseur</td>
+                                    <td>Montant</td>
+                                    <td>Date d'envoi</td>     
+                                </tr>  
+                                <tr>  
+                                    <td><a href="facture/index.html">RFX245</a></td>  
+                                    <td>Brico Dépot</td> 
+                                    <td>14.50</td>
+                                    <td>04/05/2019</td>
+                                </tr>
+                                <tr>  
+                                    <td><a href="facture/index.html">FAC875</a></td>  
+                                    <td>Fleural'ist</td> 
+                                    <td>144.50</td>
+                                    <td>25/05/2019</td>
+                                </tr>
+                                <tr>  
+                                    <td><a href="facture/index.html">JOU482</a></td>  
+                                    <td>Fleural'ist</td> 
+                                    <td>44.50</td>
+                                    <td>26/05/2019</td>
+                                </tr>  
+                                <tr>  
+                                    <td><a href="facture/index.html">OLM263</a></td>  
+                                    <td>CONFOFLOR</td> 
+                                    <td>216.20</td>
+                                    <td>25/05/2019</td>
+                                </tr>     
+                            </table>
+                            <p> Cliquez sur une facture pour voir son contenu </p>
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

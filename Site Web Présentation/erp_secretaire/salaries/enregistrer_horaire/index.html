@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Exporter des horaires</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Salariés </h1>
+                    <a href="../creer_salarie/index.html">Créer un salarié</a>
+                    <a href="../creer_planning/index.html">Créer un planning</a>
+                    <a href="../consulter_planning/index.html">Consulter un planning</a>
+                    <a href="../consulter_salarie/index.html">Consulter un salarié</a>
+                    <a href="../enregistrer_horaire/index.html">Exporter des horaires</a>
+                    <a href="../etablir_fiche_paie/index.html">Etablir une fiche de paie</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Exporter des horaires </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Sélectionner employé...</td>  
+                                    <td><select name="employe">  
+                                        <option value="Odile">Odile DERAY</option>  
+                                        <option value="Serge">Serge KARAMASOV</option>
+                                        <option value="Francky">Francky VINCENT</option>
+                                        <option value="Adbuh">Adbuh LILAS</option>
+                                        <option value="Elon">Elon MUSK</option>    
+                                    </select> </td>      
+                                </tr>  
+                                <tr>  
+                                    <td>Sélectionner semaine...</td>  
+                                    <td><select name="type">  
+                                        <option value="S34">10/06/2019 - S34</option>
+                                        <option value="S35">17/06/2019 - S35</option>
+                                        <option value="S36">24/06/2019 - S36</option>
+                                        <option value="S37">01/07/2019 - S37</option>  
+                                        <option value="S38">08/06/2019 - S38</option>  
+                                    </select> </td>
+                                </tr>  
+                            </table>
+                            <p> Les horaires suivants ont été badgés : </p>
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Jour</td>  
+                                    <td>Heure d'arrivée</td>
+                                    <td>Heure de départ</td>
+                                    <td>Horaires conformes</td>      
+                                </tr>  
+                                <tr>  
+                                    <td>Lundi</td>  
+                                    <td>08h18</td>
+                                    <td>11h58</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>  
+                                    <td>Mardi</td>  
+                                    <td>08h03</td>
+                                    <td>15h06</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <tr>  
+                                    <td>Mercredi</td>  
+                                    <td>09h33</td>
+                                    <td>18h27</td>
+                                    <td><input type="checkbox"></td>
+                                </tr> 
+                                <tr>  
+                                    <td>Jeudi</td>  
+                                    <td>08h01</td>
+                                    <td>18h01</td>
+                                    <td><input type="checkbox"></td>
+                                </tr> 
+                                <tr>  
+                                    <td>Vendredi</td>  
+                                    <td>08h30</td>
+                                    <td>14h00</td>
+                                    <td><input type="checkbox"></td>
+                                </tr>    
+                            </table>
+                            <button id="valider"> Enregistrer ces horaires </button> 
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <title>Créer un salarié</title>
+            <meta charset="utf-8">
+            <meta name="description" content="">
+            <link rel="stylesheet" type="text/css" href="css/reset.css" />
+            <link rel="stylesheet" type="text/css" href="css/style.css" />
+        </head>
+        <body>
+            <header>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="../../stocks/receptionner_marchandises/index.html">Stocks</a></li>
+                    <li><a href="../../statistiques/consulter_statistiques/index.html">Statistiques</a></li>
+                    <li><a href="../../factures/creer_fournisseur/index.html">Factures</a></li>
+                    <li><a href="../../tarifs/creer_offre_commerciale/index.html">Tarifs et offres</a></li>
+                    <li><a href="../../salaries/creer_salarie/index.html">Salaires</a></li>
+                    <li><a href="../../maintenance/creer_materiel/index.html">Maintenance</a></li>
+                </ul>
+            </header>
+            <div id=container>
+                <section id="partie1">
+                    <img src="img/logo.png" alt="logo">
+                    <h1> Salariés </h1>
+                    <a href="../creer_salarie/index.html">Créer un salarié</a>
+                    <a href="../creer_planning/index.html">Créer un planning</a>
+                    <a href="../consulter_planning/index.html">Consulter un planning</a>
+                    <a href="../consulter_salarie/index.html">Consulter un salarié</a>
+                    <a href="../enregistrer_horaire/index.html">Exporter des horaires</a>
+                    <a href="../etablir_fiche_paie/index.html">Etablir une fiche de paie</a>
+                </section>
+                <section id="partie2">
+                    <section id="partie21">
+                        <h1> Créer un salarié </h1>
+                    </section>
+                    <section id="partie22">
+                            <table id="table1"; cellspacing="5px" cellpadding="5%"; align="center">  
+                                <tr>  
+                                    <td>Numéro du salarié :</td>  
+                                    <td><input type="text" name="numero" /></td>
+                                    <td>Téléphone :</td>  
+                                    <td><input type="text" name="telephone" /></td>  
+                                </tr>  
+                                <tr>  
+                                    <td>Nom :</td>  
+                                    <td><input type="text" name="nom" /></td>
+                                    <td>Fonction :</td>  
+                                    <td><input type="text" name="fonction" /></td>
+                                </tr>  
+                                <tr>  
+                                    <td>Prénom :</td>
+                                    <td><input type="text" name="prenom" /></td>  
+                                    <td>Email :</td>
+                                    <td><input type="text" name="intervention" /></td>
+                                </tr>  
+                                <tr>  
+                                    <td>Volume horaire par semaine :</td>  
+                                    <td><input type="text" name="horaire" /></td>      
+                                </tr>   
+                            </table>
+                            <p> Adresse : </p>
+                            <input class="descriptif type="text" name="descriptif" />
+                            <button id="valider"> Valider </button>   
+                    </section>
+                </section>
+            </div>  
+        </body>
+    </html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Paiement - Le Parc A Tes Risques</title>
+        <link rel="stylesheet" href="../../css/siteWebClient.css">
+
+    </head>
+    <body>
+        <main>
+            <header>
+                <img src="../../img/logo2.png" alt="logo"/>
+                <p>Paiement sécurisé par carte bancaire</p>
+                <img src="../../img/panier.png" alt="panier"/>
+            </header>
+            <section id="paiement">
+                <article>
+                    <img src="../../img/logoCompteBancaire.jpg" alt="logo des différents comptes bancaires supportés par notre billeterie"/>
+                    <div>
+                        <p>Titulaire de la carte</p>
+                        <input type="text" name="qte" value="" size="25" placeholder="Jean Dupont">
+                    </div>
+                    <div>
+                        <p>Numéro de carte</p>
+                        <input type="text" name="nom" value="" size="25" placeholder="XXXX XXXX XXXX XXXX">
+                    </div>
+                    <div>
+                        <p>Date d'expiration</p>
+                        <input type="text" name="nom" value="" size="25" placeholder="08/19">
+                    </div>
+                    <div>
+                        <p>Cryptogramme visuel</p>
+                        <input type="text" name="nom" value="" size="5" placeholder="114">
+                        <p id="precision">3 chiffres au dos de la carte à gauche de la signature</p>
+                    </div>
+                    <button onclick="window.location.href='achatFait.html'">Valider ma commande</button>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
